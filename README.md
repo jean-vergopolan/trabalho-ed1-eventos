@@ -31,7 +31,7 @@ Funcionalidades implementadas:
 ## Como compilar e executar
 
 ```bash
-gcc -Wall -Wextra -pedantic -std=c11 -o sistema \\
+gcc -Wall -Wextra -pedantic -std=c11 -o sistema \
     main.c lista.c eventos.c participantes.c
 
 ./sistema
@@ -46,7 +46,7 @@ valgrind --leak-check=full ./sistema
 ou, se o Valgrind não estiver disponível:
 
 ```bash
-gcc -Wall -Wextra -pedantic -std=c11 -g -fsanitize=address \\
+gcc -Wall -Wextra -pedantic -std=c11 -g -fsanitize=address \
     -o sistema_asan main.c lista.c eventos.c participantes.c
 ./sistema_asan
 ```
